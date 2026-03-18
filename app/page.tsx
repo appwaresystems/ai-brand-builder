@@ -159,7 +159,7 @@ export default function Home() {
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-600 text-sm font-bold mb-6"
         >
           <Sparkles className="w-4 h-4" />
-          AI-Powered Branding
+          Smart Branding Engine
         </motion.div>
         <motion.h1 
           initial={{ opacity: 0, y: -10 }}
@@ -167,10 +167,10 @@ export default function Home() {
           transition={{ delay: 0.1 }}
           className="text-5xl md:text-7xl font-black text-slate-900 tracking-tight mb-4"
         >
-          AI Brand <span className="text-gradient">Builder</span>
+          Brand <span className="text-gradient">Builder</span>
         </motion.h1>
         <p className="text-lg text-slate-500 max-w-2xl mx-auto">
-          Step-by-step branding journey powered by advanced AI.
+          Step-by-step branding journey powered by our smart generation engine.
         </p>
       </header>
 
@@ -288,7 +288,7 @@ export default function Home() {
                         <Palette className="w-8 h-8 text-indigo-600" />
                         Logo Concepts
                       </h2>
-                      <p className="text-slate-500">Visualizing <span className="font-bold text-indigo-600">{selectedName}</span> with "{selectedSlogan}"</p>
+                      <p className="text-slate-500">Visualizing <span className="font-bold text-indigo-600">{selectedName}</span> with &quot;{selectedSlogan}&quot;</p>
                     </div>
                     <button 
                       onClick={() => selectedSlogan && handleSelectSlogan(selectedSlogan)}

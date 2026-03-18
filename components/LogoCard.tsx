@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'motion/react';
 import { Heart, Download, Type as FontIcon, Palette, ChevronDown } from 'lucide-react';
 import { LogoConcept } from '@/types';
@@ -39,11 +40,15 @@ export function LogoCard({ item, isFavorite, onToggleFavorite }: LogoCardProps) 
       {/* Visual Placeholder / SVG Area */}
       <div className="h-64 bg-slate-50 flex items-center justify-center relative group overflow-hidden">
         {item.imageUrl ? (
-          <img 
-            src={item.imageUrl} 
-            alt={item.description} 
-            className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
-          />
+          <div className="relative w-full h-full p-4 group-hover:scale-105 transition-transform duration-500">
+            <Image 
+              src={item.imageUrl} 
+              alt={item.description} 
+              fill
+              className="object-contain p-4"
+              unoptimized // Base64 SVGs don't need optimization
+            />
+          </div>
         ) : (
           <div className="text-center space-y-2 z-10">
             <div className="w-16 h-16 mx-auto rounded-xl bg-white shadow-sm flex items-center justify-center border border-slate-100">

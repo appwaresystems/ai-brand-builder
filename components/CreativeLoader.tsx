@@ -66,7 +66,7 @@ export function CreativeLoader({ message = "Generating magic..." }: { message?: 
           ))}
         </div>
         <p className="text-slate-500 text-sm max-w-xs mx-auto italic">
-          "Our AI is brainstorming unique concepts just for you. This might take a moment..."
+          &quot;Our engine is brainstorming unique concepts just for you. This might take a moment...&quot;
         </p>
       </motion.div>
     </div>
