@@ -159,7 +159,7 @@ export default function Home() {
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-600 text-sm font-bold mb-6"
         >
           <Sparkles className="w-4 h-4" />
-          Smart Branding Engine
+          AI-Powered Branding Engine
         </motion.div>
         <motion.h1 
           initial={{ opacity: 0, y: -10 }}
@@ -170,7 +170,7 @@ export default function Home() {
           Brand <span className="text-gradient">Builder</span>
         </motion.h1>
         <p className="text-lg text-slate-500 max-w-2xl mx-auto">
-          Step-by-step branding journey powered by our smart generation engine.
+          Step-by-step branding journey powered by Gemini AI.
         </p>
       </header>
 
@@ -187,9 +187,9 @@ export default function Home() {
             >
               <CreativeLoader 
                 message={
-                  step === 'input' ? "Brainstorming names..." :
-                  step === 'names' ? "Crafting perfect slogans..." :
-                  "Designing visual concepts..."
+                  step === 'input' ? "AI is brainstorming names..." :
+                  step === 'names' ? "AI is crafting perfect slogans..." :
+                  "AI is designing visual concepts..."
                 } 
               />
             </motion.div>
